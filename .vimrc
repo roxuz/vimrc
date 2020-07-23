@@ -1,3 +1,6 @@
+" Don't try to be vi compatible
+set nocompatible
+
 " Relative line numbers
 set relativenumber
 " the width of the "gutter" column used for numbering:
