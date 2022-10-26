@@ -2,11 +2,14 @@
 set nocompatible
 
 " Relative line numbers
-set relativenumber
+"set relativenumber
+" Line numbers
+set rnu
 " the width of the "gutter" column used for numbering:
 set numberwidth=3
 " text wrapping for the number column
-set cpoptions+=n
+"set cpoptions+=n
+set nowrap
 
 " Sets how many lines of history VIM has to remember
 set history=500
@@ -57,3 +60,6 @@ set nobackup
 set nowb
 set noswapfile
 
+
+" https://vi.stackexchange.com/questions/12227/vim-v-visual-block-mode-not-working
+nnoremap q <c-v>
