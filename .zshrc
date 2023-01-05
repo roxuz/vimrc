@@ -105,6 +105,7 @@ DEFAULT_USER prompt_context(){}
 
 alias gs="git status"
 alias ga="git add ."
+git config --global alias.cm 'commit -m'
 alias gi="git init"
 alias rg="rm -Rf .git"
 alias sz="source ~/.zshrc"
@@ -123,8 +124,9 @@ alias ccat="highlight --syntax=sh -O ansi"
 
 export EDITOR=vim
 
-setopt auto_cd
-cdpath=($HOME/Code $HOME/.config $HOME/.oh-my-zsh $HOME/Documents $HOME/Documents/__projects $HOME/Downloads /usr/local /Applications/SQLDeveloper.app/Contents/resources)
+#cdpath has to be set up separatly on each environment, below mac's env
+#setopt auto_cd
+#cdpath=($HOME/Code $HOME/.config $HOME/.oh-my-zsh $HOME/Documents $HOME/Documents/__projects $HOME/Downloads /usr/local /Applications/SQLDeveloper.app/Contents/resources)
 
 set -o vi
 
